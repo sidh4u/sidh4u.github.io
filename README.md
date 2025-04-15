@@ -1,5 +1,3 @@
-# Under Construction !!!
-
 ![Under Construction](images/under_construction.png)
 
 ## License
