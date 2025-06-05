@@ -23,11 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Typing effect for Linux commands. Must keep a space at the end of each line
     const phrases = [
         "Hi, There! ",
-        "I'm a DevOps Architect ",
-        "Architecting tomorrow’s infrastructure ",
-        "Automation is my second language ",
-        "Tech evolves, and so do I ",
-        "Fueled by tech, driven by curiosity "
+        "I'm a Technology Leader ",
+        "Shaping cloud-native & multi-cloud platforms ",
+        "Scaling AI/ML infrastructure with GPUs ",
+        "Driving DevOps, GitOps & FinOps transformation ",
+        "Building resilient systems for tomorrow ",
+        "Innovation through strategy & engineering "
     ];
 
     const typedText = document.getElementById("typed-text");
@@ -73,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const linkedinLink = document.getElementById("linkedin-link");
     const githubLink = document.getElementById("github-link");
     const emailLink = document.getElementById("email-link");
-    const blogsLink = document.getElementById("blogs-link");
 
     if (linkedinLink) {
         linkedinLink.href = `https://linkedin.com/in/${userName}`;
@@ -83,14 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (emailLink) {
         emailLink.href = `mailto:${userName}@gmail.com`;
-    }
-    if (blogsLink) {
-        // Determine the relative path to blogs.html
-        const currentPath = window.location.pathname;
-        const isInSubFolder = currentPath.includes("/notes/");
-
-        // Set the href dynamically based on the current path
-        blogsLink.href = isInSubFolder ? "../notes.html" : "notes.html";
     }
 });
 
