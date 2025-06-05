@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const linkedinLink = document.getElementById("linkedin-link");
     const githubLink = document.getElementById("github-link");
     const emailLink = document.getElementById("email-link");
-    const blogsLink = document.getElementById("blogs-link");
 
     if (linkedinLink) {
         linkedinLink.href = `https://linkedin.com/in/${userName}`;
@@ -83,14 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (emailLink) {
         emailLink.href = `mailto:${userName}@gmail.com`;
-    }
-    if (blogsLink) {
-        // Determine the relative path to blogs.html
-        const currentPath = window.location.pathname;
-        const isInSubFolder = currentPath.includes("/notes/");
-
-        // Set the href dynamically based on the current path
-        blogsLink.href = isInSubFolder ? "../notes.html" : "notes.html";
     }
 });
 
